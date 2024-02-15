@@ -12,7 +12,7 @@ Google Kubernetes Engine (GKE)
 This project builds a Docker image containing your website code and Nginx configuration, pushes it to Artifact Registry, and deploys it to a GKE cluster.
 
 #Setup and Installation:
-Clone this repository: git clone https://github.com/your-username/my-gke-website.git
+Clone this repository: git clone https://github.com/GNiruthian/Europe-Travel-Website-html-css-js
 Change to the project directory
 Configure Google Cloud resources: 
 Enable the APIs https://console.cloud.google.com/flows/enableapi?apiid=compute.googleapis.com,artifactregistry.googleapis.com,container.googleapis.com&_ga=2.132260878.1867639901.1707852101-1802561548.1707851525
@@ -21,8 +21,8 @@ You can confirm that the image was built by running: docker images
 You can run the docker image to test it: docker run -d -p 8080:80 [YOUR_IMAGE_NAME] .
 
 #Deployment:
+Authorize docker: gcloud auth configure-docker
 Tag the image for Artifact Registry: docker tag [YOUR_IMAGE NAME] [LOCATION]-docker.pkg.dv/[PROJECT_ID]/[IMAGE_NAME]
-gcloud auth configure-docker
 Push the image to Artifact Registry: docker push [LOCATION]-docker.pkg.dv/[PROJECT_ID]/[IMAGE_NAME]
 Go to Artifact Registry click on the [IMAGE_NAME]
 Click on the 3 verticals dots to the right of the package
