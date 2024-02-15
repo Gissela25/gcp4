@@ -2,11 +2,11 @@
 This project demonstrates deploying a website using a Docker image, Google Cloud Artifact Registry, and Google Kubernetes Engine (GKE) on Google Cloud Platform (GCP).
 
 #Technology Stack:
-Programming language: JavaScript
-Web server: Nginx
-Docker
-Google Cloud Artifact Registry
-Google Kubernetes Engine (GKE)
+>Programming language: JavaScript
+>Web server: Nginx
+>Docker
+>Google Cloud Artifact Registry
+>Google Kubernetes Engine (GKE)
 
 #Description:
 This project builds a Docker image containing your website code and Nginx configuration, pushes it to Artifact Registry, and deploys it to a GKE cluster.
