@@ -45,7 +45,7 @@ Enable the APIs https://console.cloud.google.com/flows/enableapi?apiid=compute.g
 >Select to expose the deployment as a new service and deploy.
 
 ##Usage:
->Once deployed, access your website at the external IP address of your GKE cluster and the exposed port (e.g., http://<EXTERNAL_IP>:80).
+>Once deployed, access your website at the external IP address of your GKE cluster and the exposed port (e.g.,http://35.194.32.221/80).
 
 ##Additional Notes:
 >Remember to replace placeholders like [YOUR_IMAGE_NAME] and [PROJECT_ID] with your actual values.
