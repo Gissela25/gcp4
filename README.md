@@ -1,4 +1,4 @@
-# My GKE Website Project
+# capstone project Group 4
 This project demonstrates deploying a website using a Docker image, Google Cloud Artifact Registry, and Google Kubernetes Engine (GKE) on Google Cloud Platform (GCP).
 
 ##Technology Stack:
