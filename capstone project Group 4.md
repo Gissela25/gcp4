@@ -3,9 +3,13 @@ This project demonstrates deploying a website using a Docker image, Google Cloud
 
 #Technology Stack:
 >Programming language: JavaScript
+
 >Web server: Nginx
+
 >Docker
+
 >Google Cloud Artifact Registry
+
 >Google Kubernetes Engine (GKE)
 
 #Description:
