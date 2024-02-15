@@ -30,16 +30,22 @@ Enable the APIs https://console.cloud.google.com/flows/enableapi?apiid=compute.g
 >You can run the docker image to test it: docker run -d -p 8080:80 [YOUR_IMAGE_NAME] .
 
 ##Deployment:
-Authorize docker: gcloud auth configure-docker
-Tag the image for Artifact Registry: docker tag [YOUR_IMAGE NAME] [LOCATION]-docker.pkg.dv/[PROJECT_ID]/[IMAGE_NAME]
-Push the image to Artifact Registry: docker push [LOCATION]-docker.pkg.dv/[PROJECT_ID]/[IMAGE_NAME]
-Go to Artifact Registry click on the [IMAGE_NAME]
-Click on the 3 verticals dots to the right of the package
-Select deploy to GKE and follow the prompts, including selecting an existing cluster, or creating a new one.
-Select to expose the deployment as a new service and deploy.
+>Authorize docker: gcloud auth configure-docker
+
+>Tag the image for Artifact Registry: docker tag [YOUR_IMAGE NAME] [LOCATION]-docker.pkg.dv/[PROJECT_ID]/[IMAGE_NAME]
+
+>Push the image to Artifact Registry: docker push [LOCATION]-docker.pkg.dv/[PROJECT_ID]/[IMAGE_NAME]
+
+>Go to Artifact Registry click on the [IMAGE_NAME]
+
+>Click on the 3 verticals dots to the right of the package
+
+>Select deploy to GKE and follow the prompts, including selecting an existing cluster, or creating a new one.
+
+>Select to expose the deployment as a new service and deploy.
 
 ##Usage:
-Once deployed, access your website at the external IP address of your GKE cluster and the exposed port (e.g., http://<EXTERNAL_IP>:80).
+>Once deployed, access your website at the external IP address of your GKE cluster and the exposed port (e.g., http://<EXTERNAL_IP>:80).
 
 ##Additional Notes:
 Remember to replace placeholders like [YOUR_IMAGE_NAME] and [PROJECT_ID] with your actual values.
